@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.header select{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.app{
+  
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(245, 15%, 35%);
+
+}
+.header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.slideshow{
+
+    flex-grow: 1;
+    width: 100%;
+    background-color: hsl(245, 10%, 20%);
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 1s ease-out;
+}
+.slide:nth-last-of-type(2){
+    opacity: 1;
+    transform: scale(1.05);
+    
+}
